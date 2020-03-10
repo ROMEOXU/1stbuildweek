@@ -42,7 +42,7 @@ img {
   box-sizing: border-box;
 }
 button {
-  width: 95px;
+  width: 100px;
   margin: 10%;
   height: 60px;
   border-radius: 10px;
@@ -81,7 +81,4 @@ button:hover {
     margin-left: 20%;
   }
 }
-.abtn{
-  text-decoration: none;
-  color:black;
-}
+
