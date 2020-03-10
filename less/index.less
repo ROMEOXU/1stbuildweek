@@ -1,0 +1,88 @@
+@import "page";
+@space : space-around;
+.center(){
+	display: flex;
+	justify-content: center;
+	align-items: center;
+};
+
+@desktop: ~"(max-width: 800px)";
+
+body {
+    
+    background: linear-gradient( to left,rgb(23, 147, 179), pink);
+}
+
+h1{
+    font-size:5rem;
+    text-align: center;
+    color:whitesmoke;
+    font-family:cursive, sans-serif;
+}
+
+.howto p {
+    text-align: center;
+    color:whitesmoke
+}
+
+section{
+    display: flex;
+    
+    justify-content: @space;
+}
+img {
+    width: 600px;
+    height: 400px;
+    padding: 50px;
+    
+    box-sizing: border-box;
+  }
+ button{
+     width:100px;
+     margin:10%;
+     height:60px;
+     border-radius: 10px;
+     &:hover {
+        background-color: darken(rgb(3, 189, 28), 5%)
+      }
+ }
+
+ .form{
+    text-align: center;
+ }
+ .btn{
+     display: flex;
+     justify-content: space-around;
+ }
+ .login-box{
+     width:280px;
+     position: absolute;
+     top:50%;
+     left:50%;
+     transform: translate(-50%,-50%);
+ }
+ 
+
+
+
+@media screen and (max-width: 768px) {
+
+    section {
+        flex-direction: column;
+    }
+    img{
+       display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    section {
+        flex-direction: column;
+        justify-content: space-between;
+    };
+    img{
+        margin-left: 20%;
+    }
+    
+}
